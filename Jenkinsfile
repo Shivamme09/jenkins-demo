@@ -1,6 +1,8 @@
 pipeline {
-    agent {
-        docker { image 'maven:3.9.6-eclipse-temurin-17' }
+    agent any
+
+    tools {
+        maven 'Maven-3.9'    // must match the name you configured in Global Tool Configuration
     }
 
     stages {
