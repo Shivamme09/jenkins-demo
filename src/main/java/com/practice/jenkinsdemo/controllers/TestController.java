@@ -13,5 +13,9 @@ public class TestController {
     public String triggerWelcomeMessage() {
         return "Hello World !!";
     }
+    @GetMapping("/bye")
+    public String triggerByeMessage() {
+        return "Bye !!";
+    }
 
 }
